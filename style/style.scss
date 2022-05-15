@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import "./sass/utils/utils";
+@import "./sass/layouts/header";
+@import "./sass/layouts/footer";
+
+*{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    margin: 0;
+    height: 1px;
+
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+p, h3, h4 {
+    margin: 0;
+}
+
+/* restaurant research and exploration section - home page*/
+
+.research-restaurants{
+    @include flexbox-centre;
+    flex-direction: column;
+    background-color: $color-gray;
+    border: $color-gray solid 2px;
+    form{
+        width: 100%;
+    }
+    
+    &_district{
+        @include flexbox-centre;
+        width: 100%;
+        justify-content: center;
+        background-color: darken($color: $color-gray, $amount: 3%);
+        
+        .icon-maps{
+            padding: 20px;
+            color: black;
+        }
+        .form{
+          
+           input{
+               border:darken($color: $color-gray, $amount: 3%);
+               background-color: darken($color: $color-gray, $amount: 3%);    
+           }
+        }     
+        
+    }
+    &_tittle{
+        text-align: center;
+        h1, p{
+            padding-bottom: 20px;
+        }
+    }
+    &_btn{
+        color: white;
+        background: linear-gradient($color-secondary, $color-primary);
+        border-radius: 50px;
+        margin-bottom: 10px;
+        border: none;
+        padding:15px;
+        font-size: 20px; 
+        font-weight: 600;
+    }
+
+}
+#city::placeholder{
+    color: black;
+}
+
+/* working part */
+
+.working{
+    @include flexbox-centre;
+    justify-content: space-around;
+    margin: 20px 0;
+    
+    &-choice{
+      @include flexbox-centre;
+      @include choice-background;
+      
+       &_number {
+           p{
+            @include flexbox-centre;
+            justify-content: center;
+            position: relative;
+            right: 15px;
+            color: white;
+            height: 30px;
+            width: 30px;
+            background-color: $color-primary;
+            border-radius: 30px;
+           }  
+       }
+       i{
+        color: gray;    
+        padding-right: 20px;
+    }
+    h2{
+        color: black ;
+        font-size: 20px;
+        padding-right: 20px;
+    }
+    }
+}
+/* 
+different restaurants */
+
+.restaurants{
+    @include flexbox-centre;
+    flex-direction: column;
+    background-color: $color-gray;
+    &-element{
+        @include flexbox-centre;
+        justify-content: space-around;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    &-choice{
+       width: 22%;
+       height: 260px;
+       border-radius: 15px;
+       background-color:white;
+       box-shadow: 0 0 16px #888888;
+   
+       img{
+          width: 100%;
+          height: 100%;
+          border-radius: 15px 15px 0 0 ;
+          object-fit: cover;
+  
+       }
+       
+       &_img{
+        height: 12rem;
+
+       }
+       &_info{
+        @include flexbox-centre;
+        justify-content: space-between;
+        h4, p{
+            margin: 0;
+            padding: 3px 10px 3px 20px;
+        }
+        .fa-heart{
+            padding: 20px;
+            font-size: 150%;
+        }        
+       }
+    }
+    
+}
+
+/* menus page*/
+
+.image-menu{
+   @include img-menu-size;
+}
+
+.main-menu{
+    @include flexbox-centre-column;
+    background-color: $color-gray;
+    @include menu-appearance;
+
+    &_element{
+        @include flexbox-centre;
+        justify-content: space-around;
+        width: 100%;
+    }
+    &_tittle{
+        @include flexbox-centre;
+        h1{
+            margin-right: 50px;
+        }
+    }
+}
+.bloc-menu{
+
+    width: 30%;
+    height: 500px;
+
+    /* exemple taille */
+    border: red 2px solid ;
+}
+
+.element{
+    @include flexbox-centre;
+
+    background-color: white;
+    margin: 15px 0 15px 0;
+    width: 100%;
+    height: 10%;
+    border-radius: 20px;
+
+}
+.element-choice{
+    width: 100%;
+}
+
+.icon-validation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    display: none;
+    height: 100%;
+    background-color: $color-tertiary;
+    i{
+
+        border-radius: 30px;
+        padding: 3px;
+        background-color: white;
+        color: $color-tertiary;
+    }
+  
+ 
+}
+
+.bloc-element-left{
+    display: flex;
+    justify-content: space-between;
+
+}
+.element:hover{
+    width: 100%;
+
+    .icon-validation{
+        display: flex ;
+
+
+        width: 20%;
+   
+    }
+    .element-choice{
+        border-radius: 20px 0px 0 20px;
+    }
+}
+.element-choice:hover{
+    border-radius: 20px 0px 0 20px;
+}
