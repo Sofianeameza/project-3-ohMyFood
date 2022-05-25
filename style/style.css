@@ -112,7 +112,7 @@ a:hover {
   transition: 400ms;
 }
 
-.element:hover .icon-validation {
+.meal:hover .icon-validation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,12 +122,12 @@ a:hover {
   transition: 400ms;
 }
 
-.element:hover .element-choice {
+.meal:hover .meal-choice {
   border-radius: 20px 0px 0 20px;
   width: 78%;
 }
 
-.element:hover i {
+.meal:hover i {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   -webkit-transform: rotate(360deg);
@@ -167,9 +167,7 @@ a:hover {
   border-radius: 30px 30px 0 0;
 }
 
-.main-menu_element {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+.main-menu_meal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +219,7 @@ a:hover {
   margin: 10px 0;
 }
 
-.element {
+.meal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,14 +235,14 @@ a:hover {
   border-radius: 20px;
 }
 
-.element-choice {
+.meal-choice {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 100%;
 }
 
-.element-choice h3 {
+.meal-choice h3 {
   padding-left: 20px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -252,7 +250,7 @@ a:hover {
   width: 80%;
 }
 
-.element-choice_left {
+.meal-choice_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,14 +259,14 @@ a:hover {
           justify-content: space-between;
 }
 
-.element-choice_left .info-dishe {
+.meal-choice_left .info-dishe {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   padding-left: 20px;
 }
 
-.element-choice_left .price {
+.meal-choice_left .price {
   padding-right: 20px;
 }
 
@@ -304,6 +302,15 @@ a:hover {
 
 .btn-order {
   margin: 30px auto;
+}
+
+@media screen and (max-width: 992px) {
+  .main-menu_meal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 * {
