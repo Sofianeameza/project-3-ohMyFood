@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <script src="https://kit.fontawesome.com/5f18b148c3.js" crossorigin="anonymous"></script>
+    
     <title>ohmyfood</title>
 </head>
 <body>
@@ -15,87 +16,92 @@
     <header>
         <div class="logo">
             <img class="logo-header" src="images/logo/ohmyfood.png" alt="logo ohmyfood ">
-
         </div>
-
     </header>
+
 
     <main>
 
         <!-- restaurant research and exploration section - home page -->
         <section class="research-restaurants">
-            <form action="form.html" method="get">
 
+            <!-- form-research -->
+            <form action="form.html" method="get">
                 <div class="research-restaurants_district">
                     <a href="#"> 
                         <i class="fa-solid fa-location-dot icon-maps"></i> </a>
                     <div class="form">
                         <input type="text" placeholder="Paris, Belleville" id="city">
-    
                     </div>
                 </div>
             </form>
+
             <div class="research-restaurants_tittle">
                 <h1>Réserver le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, Sélectionnés par nos soins.</p>
             </div>
+
+            <!-- button explore -->
             <div>
                 <button class="research-restaurants_btn btn">Explorer nos restaurants</button>
             </div>
 
         </section>
 
-        <!-- working part -->
+        <!--operation steps-->
 
-        <section class="working">
+        <section class="steps">
             <div>
-                <h1>fonctionnement</h1>
+                <h1>Fonctionnement</h1>
             </div>
 
-                <!-- fonctionnement 1 -->
-                <a href="#" class="working-choice">
-                    <div class="working-choice_number">
-                        <p >1</p>
+            <div class="steps-three">
+
+                <!-- step one  -->
+                <a href="#" class="steps-choice">
+                    <div class="steps-choice_number">
+                        <p>1</p>
                     </div>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <h2>Choisissez un restaurant</h2>
                 </a>
-
-                <!-- fonctionnement 2 -->
-                <a href="#" class="working-choice">
-                    <div class="working-choice_number">
-                        <p >2</p>
+    
+                <!-- step two  -->
+                <a href="#" class="steps-choice">
+                    <div class="steps-choice_number">
+                        <p>2</p>
                     </div>
                     <i class="fa-solid fa-list"></i>
                     <h2>Composez votre menu</h2>
                 </a>
            
-                <!-- fonctionnement 3 -->
-                <a href="#" class="working-choice">
-                    <div class="working-choice_number">
+                <!-- stp three -->
+                <a href="#" class="steps-choice">
+                    <div class="steps-choice_number">
                         <p>3</p>
                     </div>
                     <i class="fa-solid fa-store"></i>
                     <h2>Dégustez au restaurant</h2>
                 </a>
-         
+            </div>
+
         </section>
 
         <!-- differents restaurants  -->
 
         <section class="restaurants">
 
-            <div restaurants-tittle>
+            <div>
                 <h2>Restaurant</h2>
             </div>
 
-            <div class="restaurants-element">
-
+            <div class="restaurants-different">
 
                 <!-- Restaurant 1  -->
                 <a href="./la-palette-de-gout.html" class="restaurants-choice">
                     <div class="restaurants-choice_img">
                         <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        <p class="new">Nouveau</p>
                     </div>
 
                     <div class="restaurants-choice_info">
@@ -103,8 +109,9 @@
                             <h4>La palette du Gout</h4>
                             <p>Ménilmontant</p>
                         </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
+                        <div class="heart-icon" >
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-heart "></i>
                         </div>
                     </div>   
                 </a> 
@@ -113,6 +120,7 @@
                 <a href="./la_note-enchantee.html" class="restaurants-choice">
                     <div class="restaurants-choice_img">
                         <img src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                        <p class="new">Nouveau</p>
                     </div> 
 
                     <div class="restaurants-choice_info">
@@ -120,8 +128,9 @@
                             <h4>La note enchantée</h4>
                             <p>Charonne</p>
                         </div>
-                        <div>
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="heart-icon" >
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-heart "></i>
                         </div>
                     </div> 
                 </a>
@@ -137,8 +146,9 @@
                             <h4> A la Française</h4>
                             <p>Cité Rouge</p>
                         </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
+                        <div class="heart-icon" >
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-heart "></i>
                         </div>
                     </div>   
                 </a> 
@@ -154,8 +164,9 @@
                             <h4>Le délice des sens</h4>
                             <p>Folie-Méricourt</p>
                         </div>
-                        <div>
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="heart-icon" >
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-heart "></i>
                         </div>
                     </div>
                     
@@ -165,39 +176,44 @@
 
     </main>
 
-    <!-- bas de page ohmyfood  -->
+   <!-- bas de page ohmyfood  -->
 
-    <footer class="ohmyfood-footer">
-        <div class="ohmyfood-footer_tittle">
-            <strong>ohmyfood</strong>
-        </div>
-        <div class="ohmyfood-footer_list">
-            <ul >
-                <li >
-                    <a href="#" class="ohmyfood-footer_element">
-                        <i class="fa-solid fa-utensils footer-icon"></i>
-                        <p>Proposer un restaurant</p>
-                    </a>
-                </li>
+   <footer class="ohmyfood-footer footer-page">
+    <div class="ohmyfood-footer_tittle">
+        <strong>ohmyfood</strong>
+    </div>
+    <div class="ohmyfood-footer_list">
+        <ul >
+            <li >
+                <a href="#" class="ohmyfood-footer_element">
+                    <i class="fa-solid fa-utensils footer-icon"></i>
+                    <p>Proposer un restaurant</p>
 
-                <li>
-                    <a href="#" class="ohmyfood-footer_element">
-                        <i class="fa-solid fa-handshake-angle footer-icon"></i>
-                        <p>Devenir partenaire</p>
-                    </a>  
-                </li> 
+                </a>
+
+            </li>
+            <li  >
+                <a href="#" class="ohmyfood-footer_element">
+                    <i class="fa-solid fa-handshake-angle footer-icon"></i>
+                    <p>Devenir partenaire</p>
+                </a>
                 
-                <li>
-                    <a href="#">Mentions légales</a>
-                </li>
-                
-                <li>
-                    <a href="#">Contact</a> 
-                </li>
+            </li> 
             
-            </ul>
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            
+           
+            <li>
+                <a href="#">Contact</a> 
+            </li>
+        
+        </ul>
 
-        </div>
-    </footer>
+    </div>
+
+
+</footer>
 </body>
 </html>

@@ -1,0 +1,62 @@
+
+ /* animation générales  */
+ a:hover{
+ 
+    transition: $transition;
+    transform: scale(1.03);
+
+}
+.heart-icon:hover{
+.fa-regular{
+    color: transparent;
+}
+
+.fa-solid{
+    position: absolute;
+    transition: all 0.8s;
+   color: $color-secondary;
+
+   
+}
+}
+
+
+/* animation sur les menu */
+.tittle-bloc:hover{
+    width: 100%;
+    transition:$transition;
+}
+.element:hover{
+    
+    .icon-validation {
+        display: flex ;
+        background-color: $color-tertiary;
+        width: 22% ;
+        transition: $transition;
+    }
+
+    .element-choice{
+        border-radius: 20px 0px 0 20px;
+        width: 78%;
+
+
+    }
+
+    i{
+        transition: all 0.8s;
+         transform: rotate(360deg);
+    }
+    }
+
+
+
+  
+
+
+/* animation sur les button  */
+
+.btn:hover{
+    transform: scale(1.05);
+transition: $transition;
+
+}
