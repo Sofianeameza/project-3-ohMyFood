@@ -267,6 +267,7 @@ a:hover {
   margin: 20px 0;
   height: 20%;
   border-radius: 20px;
+  /* animation sur l'apparition progressive du menu  */
 }
 
 .meal-one {
