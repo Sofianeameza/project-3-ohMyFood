@@ -1,6 +1,32 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap");
+/* animation sur l'apparition du menu  */
+@-webkit-keyframes progressive {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes progressive {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 header {
   position: relative;
   width: 100%;
@@ -94,6 +120,7 @@ a:hover {
           transform: scale(1.03);
 }
 
+/* animation sur les coeur */
 .heart-icon:hover .fa-regular {
   color: transparent;
 }
@@ -101,8 +128,13 @@ a:hover {
 .heart-icon:hover .fa-solid {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 400ms;
+  transition: 400ms;
 }
 
 /* animation sur les menu */
@@ -167,18 +199,6 @@ a:hover {
   border-radius: 30px 30px 0 0;
 }
 
-.main-menu_meal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-}
-
 .main-menu_name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,6 +210,18 @@ a:hover {
 
 .main-menu_name h1 {
   margin-right: 50px;
+}
+
+.main-menu_meal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
 }
 
 .main-menu .heart-icon {
@@ -207,6 +239,8 @@ a:hover {
 .tittle-bloc {
   border-bottom: 3.5px solid #99E2D0;
   width: 15%;
+  -webkit-animation: progressive  0.5s;
+          animation: progressive  0.5s;
 }
 
 .bloc-menu {
@@ -233,6 +267,21 @@ a:hover {
   margin: 20px 0;
   height: 20%;
   border-radius: 20px;
+}
+
+.meal-one {
+  -webkit-animation: progressive  1.3s;
+          animation: progressive  1.3s;
+}
+
+.meal-two {
+  -webkit-animation: progressive  1.6s;
+          animation: progressive  1.6s;
+}
+
+.meal-three {
+  -webkit-animation: progressive  1.9s;
+          animation: progressive  1.9s;
 }
 
 .meal-choice {
@@ -562,7 +611,7 @@ p, h3, h4 {
   position: absolute;
   right: 10px;
   width: 80px;
-  padding: 2px;
+  padding: 6px;
   color: #11ae82;
   background: #99E2D0;
   border-radius: 3px;

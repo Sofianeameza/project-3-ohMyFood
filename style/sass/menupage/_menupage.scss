@@ -9,16 +9,16 @@
      background-color: $color-gray;
      @include menu-appearance;
  
-     &_meal{
-         @include flexbox-centre;
-         justify-content: space-around;
-         width: 100%;
-     }
      &_name{
          @include flexbox-centre;
          h1{
              margin-right: 50px;
          }
+     }
+     &_meal{
+         @include flexbox-centre;
+         justify-content: space-around;
+         width: 100%;
      }
      .heart-icon{
          display: flex;
@@ -35,15 +35,19 @@
  .tittle-bloc{
      border-bottom: 3.5px solid $color-tertiary;
      width: 15%;
+     animation: progressive  0.5s ;
+   
  }
  .bloc-menu{
  
      width: 30%;
      height: 400px;
+
      h2{
          font-weight: 200;
          margin: 10px 0;
      }
+
      
  
  }
@@ -56,41 +60,56 @@
      margin: 20px 0;
      height: 20%;
      border-radius: 20px;
- 
- 
- }
- .meal-choice{
-     flex-grow: 1;
-     width: 100%;
- 
- 
-     h3{
-         padding-left: 20px;
-         text-overflow: ellipsis;
-         overflow: hidden;
-         white-space: nowrap;
-         width: 80%;
-       
-         }
- 
-     &_left{
-             display: flex;
-             justify-content: space-between;
-             .info-dishe{
-                 text-overflow: ellipsis;
-                 overflow: hidden;
-                 white-space: nowrap;
-                 padding-left: 20px;
-             }
-             .price{
-                 padding-right: 20px;
- 
-             }
- 
+     &-one{
+        animation: progressive  1.3s ;
+
+     }
+     &-two{
+        animation: progressive  1.6s ;
+
+     }
+     &-three{
+        animation: progressive  1.9s ;
+
      }
      
- 
+     
+    &-choice{
+    flex-grow: 1;
+    width: 100%;
+
+
+    h3{
+        padding-left: 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 80%;
+      
+        }
+
+    &_left{
+            display: flex;
+            justify-content: space-between;
+            .info-dishe{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                padding-left: 20px;
+            }
+            .price{
+                padding-right: 20px;
+
+            }
+
+    }
+    
+
+}
  }
+
+
+
  
  .icon-validation{
      justify-content: center;

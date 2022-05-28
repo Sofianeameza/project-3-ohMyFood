@@ -5,6 +5,7 @@ $color-tertiary: #99E2D0;
 $mix-color:linear-gradient($color-secondary, $color-primary);
 $transition: 400ms;
 
+
 @mixin flexbox-centre {
     display: flex;
     align-items: center;
@@ -54,3 +55,18 @@ $transition: 400ms;
     box-shadow: 0 0 6px #87878773;
     
 }
+
+
+/* animation sur l'apparition du menu  */
+@keyframes progressive {
+
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }   
+}
+

@@ -6,16 +6,21 @@
     transform: scale(1.03);
 
 }
+
+/* animation sur les coeur */
 .heart-icon:hover{
+
 .fa-regular{
     color: transparent;
 }
 
 .fa-solid{
-
    background: $mix-color;
+   background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+   transform: scale(1.3);
+   transition: $transition;
    
 }
 }
@@ -55,4 +60,6 @@
 transition: $transition;
 
 }
+
+
 
