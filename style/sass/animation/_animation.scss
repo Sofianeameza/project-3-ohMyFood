@@ -4,7 +4,6 @@
  
     transition: $transition;
     transform: scale(1.03);
-    
 
 }
 .heart-icon:hover{
@@ -13,14 +12,13 @@
 }
 
 .fa-solid{
-    position: absolute;
-    transition: all 0.8s;
-   color: $color-secondary;
 
+   background: $mix-color;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
    
 }
 }
-
 
 /* animation sur les menu */
 .tittle-bloc:hover{
@@ -50,10 +48,6 @@
     }
 
 
-
-  
-
-
 /* animation sur les button  */
 
 .btn:hover{
@@ -61,3 +55,4 @@
 transition: $transition;
 
 }
+
