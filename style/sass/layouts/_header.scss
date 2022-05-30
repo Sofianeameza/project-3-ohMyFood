@@ -1,5 +1,7 @@
 header{
     position: relative;
+    display: flex;
+align-items: center;
     width: 100%;
     @include shadow-element;
 }
@@ -11,6 +13,22 @@ header{
     &-header{
         width: 25%;
         padding: 20px;
-        min-width: 250px;
+        min-width: 220px;
+    }
+}
+
+.btn-return{
+    position: absolute;
+    padding: 10px 20px;
+
+    font-size: 23px;
+    color: $color-primary;
+
+    &:hover{
+  
+        transform: translateX(-10px);
+        transition: $transition;
+     
+     
     }
 }

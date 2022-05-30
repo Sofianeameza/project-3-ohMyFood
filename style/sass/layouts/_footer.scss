@@ -4,12 +4,17 @@
     background-color: black;
 
     &_tittle{
+
         display: flex;
 
         justify-content: center;
-        padding: 10px 0 0 30px;
-        font-size: 35px;
+        padding: 10px 0 0 40px;
+ 
+
         color: white;
+        h1{
+            font-size: 20px;
+        }
     }
 }
 

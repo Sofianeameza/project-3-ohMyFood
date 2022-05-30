@@ -58,6 +58,56 @@
 .btn:hover{
     transform: scale(1.05);
 transition: $transition;
+@include btn-hover;
+
+}
+@media screen and (max-width:992px){
+   .heart-icon:hover{
+
+    .fa-regular{
+        color: inherit;
+    }
+    
+    .fa-solid{
+       background: none;
+     
+    }
+    }
+
+    .heart-icon:active {
+        animation: btn-active 2s;
+
+        
+
+
+        .fa-regular{
+            color: transparent;
+        }
+        .fa-solid {
+  
+            background: $mix-color;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+   
+
+      
+    }
+    
+}
+
+@keyframes btn-active{
+    
+    0%{
+
+        opacity: 0;
+    }
+    99%{
+
+        opacity: 1;
+    }   
 
 }
 

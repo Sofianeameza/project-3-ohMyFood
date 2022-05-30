@@ -29,6 +29,12 @@
 
 header {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   -webkit-box-shadow: 0 0 6px #87878773;
           box-shadow: 0 0 6px #87878773;
@@ -42,7 +48,21 @@ header {
 .logo-header {
   width: 25%;
   padding: 20px;
-  min-width: 250px;
+  min-width: 220px;
+}
+
+.btn-return {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 23px;
+  color: #9356DC;
+}
+
+.btn-return:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  -webkit-transition: 400ms;
+  transition: 400ms;
 }
 
 /* footer */
@@ -57,9 +77,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 0 0 30px;
-  font-size: 35px;
+  padding: 10px 0 0 40px;
   color: white;
+}
+
+.ohmyfood-footer_tittle h1 {
+  font-size: 20px;
 }
 
 .ohmyfood-footer_list {
@@ -172,6 +195,51 @@ a:hover {
           transform: scale(1.05);
   -webkit-transition: 400ms;
   transition: 400ms;
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
+  -webkit-box-shadow: 0px 0px 8px 4px #9356DC;
+          box-shadow: 0px 0px 8px 4px #9356DC;
+}
+
+@media screen and (max-width: 992px) {
+  .heart-icon:hover .fa-regular {
+    color: inherit;
+  }
+  .heart-icon:hover .fa-solid {
+    background: none;
+  }
+  .heart-icon:active {
+    -webkit-animation: btn-active 2s;
+            animation: btn-active 2s;
+  }
+  .heart-icon:active .fa-regular {
+    color: transparent;
+  }
+  .heart-icon:active .fa-solid {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@-webkit-keyframes btn-active {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+  }
+}
+
+@keyframes btn-active {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+  }
 }
 
 /* menus page*/
@@ -238,7 +306,7 @@ a:hover {
 
 .tittle-bloc {
   border-bottom: 3.5px solid #99E2D0;
-  width: 15%;
+  width: 40px;
   -webkit-animation: progressive  0.5s;
           animation: progressive  0.5s;
 }
@@ -248,7 +316,7 @@ a:hover {
   height: 400px;
 }
 
-.bloc-menu h2 {
+.bloc-menu h3 {
   font-weight: 200;
   margin: 10px 0;
 }
@@ -292,7 +360,8 @@ a:hover {
   width: 100%;
 }
 
-.meal-choice h3 {
+.meal-choice h4 {
+  font-size: 19px;
   padding-left: 20px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -348,6 +417,8 @@ a:hover {
   padding: 15px 25px;
   font-size: 17px;
   font-weight: 400;
+  -webkit-box-shadow: 0px 0px 13px 1px #FF79DA;
+          box-shadow: 0px 0px 13px 1px #FF79DA;
 }
 
 .btn-order {
@@ -380,8 +451,19 @@ a {
   color: black;
 }
 
-p, h3, h4 {
+p, h3 {
   margin: 0;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
+}
+
+h4 {
+  margin: 0 0 7px 0;
 }
 
 /* restaurant research and exploration section - home page*/
@@ -466,6 +548,8 @@ p, h3, h4 {
   padding: 15px 25px;
   font-size: 17px;
   font-weight: 400;
+  -webkit-box-shadow: 0px 0px 13px 1px #FF79DA;
+          box-shadow: 0px 0px 13px 1px #FF79DA;
   margin-bottom: 100px;
 }
 
