@@ -76,4 +76,10 @@ $transition: 400ms;
         opacity: 1;
     }   
 }
+@mixin font-text {
+    font-family: "Shrikhand";
+    font-weight: 500;
+    
+}
+
 

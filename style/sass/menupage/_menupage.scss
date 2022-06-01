@@ -13,6 +13,9 @@
          @include flexbox-centre;
          h1{
              margin-right: 50px;
+             @include font-text;
+             
+
          }
      }
      &_meal{

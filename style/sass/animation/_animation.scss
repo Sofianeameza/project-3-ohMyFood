@@ -43,15 +43,20 @@
         border-radius: 20px 0px 0 20px;
         width: 78%;
 
-
     }
-
     i{
         transition: all 0.8s;
          transform: rotate(360deg);
     }
     }
+.steps-choice:hover{
+    background: #0f04e01a;
+  
+    i{
+        color: $color-primary;
+    }
 
+}
 
 /* animation sur les button  */
 
@@ -75,10 +80,7 @@ transition: $transition;
     }
 
     .heart-icon:active {
-        animation: btn-active 2s;
-
-        
-
+        animation: btn-active 2s  ;
 
         .fa-regular{
             color: transparent;
