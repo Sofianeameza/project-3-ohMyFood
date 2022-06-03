@@ -1,7 +1,7 @@
 header{
     position: relative;
     display: flex;
-align-items: center;
+    align-items: center;
     width: 100%;
     @include shadow-element;
 }
@@ -17,18 +17,16 @@ align-items: center;
     }
 }
 
+/* arrow back to home */
+
 .btn-return{
     position: absolute;
     padding: 10px 20px;
-
     font-size: 23px;
-    color: $color-primary;
 
     &:hover{
-  
         transform: translateX(-10px);
         transition: $transition;
-     
-     
+        color: $color-primary;  
     }
 }

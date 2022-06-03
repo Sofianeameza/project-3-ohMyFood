@@ -1,35 +1,35 @@
 
- /* animation générales  */
+ /* animation liens  */
  a:hover{
  
     transition: $transition;
     transform: scale(1.03);
-
 }
 
-/* animation sur les coeur */
+/* animated heart likes */
 .heart-icon:hover{
 
-.fa-regular{
-    color: transparent;
+    .fa-regular{
+        color: transparent;
+    }
+
+    .fa-solid{
+        background: $mix-color;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(1.3);
+        transition: $transition;
+    
+    }
 }
 
-.fa-solid{
-   background: $mix-color;
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   transform: scale(1.3);
-   transition: $transition;
-   
-}
-}
-
-/* animation sur les menu */
+/* animation  menu */
 .tittle-bloc:hover{
     width: 100%;
     transition:$transition;
 }
+
 .meal:hover{
     
     .icon-validation {
@@ -49,6 +49,8 @@
          transform: rotate(360deg);
     }
     }
+
+/* animation steps  */
 .steps-choice:hover{
     background: #0f04e01a;
   
@@ -58,7 +60,7 @@
 
 }
 
-/* animation sur les button  */
+/* animation button  */
 
 .btn:hover{
     transform: scale(1.05);
@@ -66,17 +68,19 @@ transition: $transition;
 @include btn-hover;
 
 }
+
+
 @media screen and (max-width:992px){
    .heart-icon:hover{
 
-    .fa-regular{
-        color: inherit;
-    }
-    
-    .fa-solid{
-       background: none;
-     
-    }
+        .fa-regular{
+            color: inherit;
+        }
+        
+        .fa-solid{
+        background: none;
+        
+        }
     }
 
     .heart-icon:active {
@@ -91,26 +95,8 @@ transition: $transition;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-
-        }
-   
-
-      
-    }
-    
-}
-
-@keyframes btn-active{
-    
-    0%{
-
-        opacity: 0;
-    }
-    99%{
-
-        opacity: 1;
-    }   
-
+        }     
+    }    
 }
 
 

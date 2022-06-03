@@ -13,9 +13,8 @@
          @include flexbox-centre;
          h1{
              margin-right: 50px;
-             @include font-text;
+             @include font-text-shrikhand;
              
-
          }
      }
      &_meal{
@@ -121,9 +120,30 @@
  .btn-order{
      margin: 30px auto;
  }
+
+  /* responsive design similar tablet and mobile */
+
  @media screen and (max-width:992px){
-     .main-menu_meal{
-         flex-direction: column;
-     }
- }
+
+    .bloc-menu{
+        width: 95%;
+    }
+
+    .main-menu{
+
+        &_name{
+            padding: 20px;
+            justify-content: space-between;
+            width: 95%;       
+        }
+
+        &_meal{
+            flex-direction: column;
+
+        }
+    }  
+}
+
+
+
  

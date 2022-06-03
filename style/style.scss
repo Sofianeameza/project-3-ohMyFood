@@ -5,6 +5,7 @@
 @import "./sass/layouts/footer";
 @import "./sass/animation/animation";
 @import "./sass/menupage/menupage";
+@import "./sass/layouts/spinner";
 
 *{
     box-sizing: border-box;
@@ -15,8 +16,6 @@ body{
     margin: 0;
     height: 1px;
     min-width: 300px;
-
-   
 }
 
 a{
@@ -29,11 +28,10 @@ p, h3{
 }
 
 h1{
-
-
     font-size: 30px;
-
 }
+
+/* margin of the titles inside the cards  */
 h4{
     margin: 0 0 7px 0;
 }
@@ -45,12 +43,9 @@ h4{
     background-color: $color-gray;
     border: $color-gray solid 2px;
 
-    
     /*  form-research  */
     form{
         width: 100%;
-    
-
     }
     
     &_district{
@@ -62,7 +57,6 @@ h4{
         .icon-maps{
             padding: 20px;
             color: black;
-     
         }
 
         .form{
@@ -73,6 +67,7 @@ h4{
             }
         }       
     }
+
     #city::placeholder{
         color: black;
     }
@@ -93,10 +88,7 @@ h4{
     }
 }
 
-
 /* operation steps */
-
-
 
 .steps{
     h1{
@@ -113,8 +105,7 @@ h4{
     &-choice{
       @include flexbox-centre;
       @include choice-background;
-      @include shadow-element;
-     
+      @include shadow-element;   
       
        &_number {
            
@@ -139,21 +130,21 @@ h4{
         color: black ;
         font-size: 18px;
         font-weight: 600;
-        padding-right: 30px;
-        padding: 10px;
+        padding: 10px 30px 10px 0;
     }
     }
 }
 
 /* different restaurants */
 
-  
 .restaurants{
     background-color: $color-gray;
 
     h2{
         text-align: center;
-        padding: 20px 0 0;
+        font-size: 30px;
+        padding: 40px 30px 10px 30px 
+
     }
 
     &-different{
@@ -169,7 +160,7 @@ h4{
        height: 260px;
        border-radius: 15px;
        background-color:white;
-       box-shadow: 0 0 16px #888888;
+       box-shadow: 0 0 16px darken($color-gray, $amount: 50%);
        min-width: 235px;
        position: relative;
    
@@ -178,13 +169,10 @@ h4{
           height: 100%;
           border-radius: 15px 15px 0 0 ;
           object-fit: cover;
+          height: 12rem;
   
        }
        
-       &_img{
-        height: 12rem;
-
-       }
        &_info{
         @include flexbox-centre;
         justify-content: space-between;
@@ -192,12 +180,13 @@ h4{
             margin: 0;
             padding: 3px 10px 3px 20px;
         }
+
         .heart-icon{
             display: flex;
+
             .fa-solid{
                 position: absolute;
-                color: transparent;
-               
+                color: transparent;     
             }
         }
         .fa-heart{
@@ -208,225 +197,53 @@ h4{
     }    
 }
 
+/* mention new restaurant */
 .new{
     top: 10px;
     position: absolute;
     right: 10px;
     width: 80px;
     padding: 6px;
-    color: #11ae82;
+    color: #065d4789;
     background: #99E2D0;
     border-radius: 3px;
     text-align: center;
 
 }
 
-
-
+/* responsive design similar tablet and mobile */
 @media screen and (max-width:992px) {
+    .steps{
 
-.steps-three{
-    flex-direction: column;
-    margin: 20px;
-    
-}
-.steps{
-    justify-content: flex-start;
-    &-choice{
-        margin: 20px 20px 20px 30px;
-        transform: scale(1.05);
-       
-    }
-
-    h1{
-       text-align: inherit;
-        margin-left: 30px ;
-    }  
-}
-
-.restaurants{
-     
-        h2{
-          text-align:left;
-          margin: 0 0  0 10px;
+        h1{
+            text-align:left;
+            padding: 40px 0 10px 30px 
         }
 
-    &-different{
-        flex-direction: column;
-        
-    }
-    &-choice{
-        width: 92%;
-        margin: 20px;
-    }
-}
-/* footer animation */
-.ohmyfood-footer_tittle{
-    justify-content: flex-start;
+        &-three{
+            flex-direction: column;
+            margin: 20px;      
+        }
 
-}
-ul{
-    flex-direction: column;
-    li{
-        margin: 5px 0;
-    } 
-  
- }
- .main-menu{
-     align-items: flex-start;
-     &_different{
-         flex-direction: column;
-         width: 100%;
-     }
+        &-choice{
+            margin: 10px 0px 10px 20px;
     
-     &_name{
-         padding: 20px;
-         justify-content: space-between;
-         width: 95%;
-         
-     }
- }
- .bloc-menu{
-     width: 95%;
- }
-    
-}
-
-/* loadingspinner */
-.loading{
-    height: 100%;
-width: 100%;
-
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background:white;
-    z-index: 1;
-    animation: anim-loader-duration-after 4s forwards ;
-
-
-    &-spinner{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    
-        border-image-slice: 1;
-        height: 80px;
-        width: 200px;
-
-        opacity: 0.7;
-   
-
-        
-
-        &-bloc{
-            border-radius: 50%;
-            height: 30px;
-            width: 30px;
         } 
     }
 
-}
- .spinner-one{
-    background-color: $color-secondary;
-    animation: anim-loader 900ms;
-    animation-delay: 0.2s;
-    margin: 10px;
+    .restaurants{     
+        h2{
+            text-align:left;
+        }
 
-
-    
-}
-.spinner-two{
-    background-color: $color-tertiary;
-    animation: anim-loader 900ms;
-    animation-delay: 1.2s;
-    margin: 10px;
-}
-.spinner-three{
-    background-color: $color-primary;
-    animation: anim-loader 900ms;
-    animation-delay: 2.2s  ;
-    margin: 10px;
-
-
-    
-}
-
-
-@keyframes anim-loader {
-
-    0%{
-        transform: translateY(-1000%);
-
-    }
-    100%{
-        transform: translateY(0);
-
-    }   
-}
-
-
-@keyframes anim-loader-duration-after {
-
- 99%{
-opacity: 1;
-height: 100%;
-width: 100%;
-    
-    }
-    100%{
-        opacity: 0;
-
-        height: 0%;
-width: 0%;
-
-
-   
-}   
-}
-
- 
-
-
-.loading-text{
-
-    
-
-
-    font-size: 26px;
-    font-weight: 700;
-
-    &-one{
-        color: $color-secondary;
-        animation: anim-loader-text-after 6s;
-    }
-    &-two{
-        color: $color-tertiary;
-        animation: anim-loader-text-after 6s;
+        &-different{
+            flex-direction: column;  
+        }
+        &-choice{
+            width: 92%;
+            margin: 20px;
+        }
     }
   
-    &-three{
-        color: $color-primary;
-        animation: anim-loader-text-after 6s;
-    }
-  
-  
 }
-@keyframes anim-loader-text-after {
-
-    0%{
- opacity: 0;
- 
-      
-     }
-     100%{
-         opacity: 1;
-  
- }   
- }
-
-
-
 

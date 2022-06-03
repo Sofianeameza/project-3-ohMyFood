@@ -1,39 +1,32 @@
 /* footer */
 .ohmyfood-footer{
 
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.827);
 
     &_tittle{
-
         display: flex;
-
         justify-content: center;
         padding: 10px 0 0 40px;
- 
-
         color: white;
+
         h1{
             font-size: 20px;
-            @include font-text;
+            @include font-text-shrikhand ;
 
         }
     }
 }
 
 .ohmyfood-footer_list{
-
-
     color: white;
-
 
     a{
         text-decoration: none;
         color: white;
-
-     
-        
+   
     }
 }
+
 .ohmyfood-footer_element{
     @include flexbox-centre;
 
@@ -50,20 +43,35 @@
 ul{
     list-style: none;
     display: flex;
-   justify-content: space-around;
+    justify-content: space-around;
     padding-bottom: 5px;
     
     li{
         margin: 20px 0;
     }
 }
+
 .footer-page{
     position: relative;
     bottom: 40px;
 }
-.footer-page_menu{
-    @include variation-bloc;
-}
+
+/* responsive design similar tablet and mobile */
+@media screen and (max-width:992px) {
+    
+    .ohmyfood-footer_tittle{
+        justify-content: flex-start;
+    
+    }
+    ul{
+        flex-direction: column;
+        li{
+            margin: 5px 0;
+        }   
+     }
+     
+     
+    }  
 
 
 

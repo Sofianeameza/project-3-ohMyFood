@@ -9,8 +9,13 @@ $transition: 400ms;
 @mixin flexbox-centre {
     display: flex;
     align-items: center;
-   
 }
+
+@mixin flexbox-centre-column {
+    @include flexbox-centre;
+    flex-direction: column;
+}
+
 @mixin btn {
     color: white;
     background: $mix-color;
@@ -30,12 +35,7 @@ $transition: 400ms;
 
 }
 
-@mixin flexbox-centre-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
+
 @mixin choice-background {
     background-color: $color-gray;
     border-radius: 20px;
@@ -63,7 +63,6 @@ $transition: 400ms;
     
 }
 
-
 /* animation sur l'apparition du menu  */
 @keyframes progressive {
 
@@ -76,10 +75,64 @@ $transition: 400ms;
         opacity: 1;
     }   
 }
-@mixin font-text {
+@mixin font-text-shrikhand {
     font-family: "Shrikhand";
     font-weight: 500;
     
 }
+@keyframes anim-loader-text-after {
+
+    0%{
+ opacity: 0;
+ 
+      
+     }
+     100%{
+         opacity: 1;
+  
+ }   
+ }
+ 
+ @keyframes btn-active{
+    
+    0%{
+
+        opacity: 0;
+    }
+    99%{
+
+        opacity: 1;
+    }   
+
+}
+
+@keyframes anim-loader {
+
+    0%{
+        transform: translateY(-1000%);
+
+    }
+    100%{
+        transform: translateY(0);
+
+    }   
+}
+
+
+@keyframes anim-loader-duration-after {
+
+    99%{
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+    
+    }
+    100%{
+        opacity: 0;
+        height: 0%;
+        width: 0%;  
+    }   
+}
+
 
 
