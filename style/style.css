@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap");
 /* animation sur l'apparition du menu  */
@@ -166,7 +165,7 @@ header {
   color: white;
 }
 
-.ohmyfood-footer_tittle h1 {
+.ohmyfood-footer_tittle h2 {
   font-size: 20px;
   font-family: "Shrikhand";
   font-weight: 500;
@@ -235,7 +234,7 @@ ul li {
   }
 }
 
-/* animation générales  */
+/* animation liens  */
 a:hover {
   -webkit-transition: 400ms;
   transition: 400ms;
@@ -243,7 +242,7 @@ a:hover {
           transform: scale(1.03);
 }
 
-/* animation sur les coeur */
+/* animated heart likes */
 .heart-icon:hover .fa-regular {
   color: transparent;
 }
@@ -260,7 +259,7 @@ a:hover {
   transition: 400ms;
 }
 
-/* animation sur les menu */
+/* animation  menu */
 .tittle-bloc:hover {
   width: 100%;
   -webkit-transition: 400ms;
@@ -289,6 +288,7 @@ a:hover {
           transform: rotate(360deg);
 }
 
+/* animation steps  */
 .steps-choice:hover {
   background: #0f04e01a;
 }
@@ -297,7 +297,7 @@ a:hover {
   color: #9356DC;
 }
 
-/* animation sur les button  */
+/* animation button  */
 .btn:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
