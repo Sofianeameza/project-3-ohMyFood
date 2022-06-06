@@ -5,7 +5,6 @@ $color-tertiary: #99E2D0;
 $mix-color:linear-gradient($color-secondary, $color-primary);
 $transition: 400ms;
 
-
 @mixin flexbox-centre {
     display: flex;
     align-items: center;
@@ -20,13 +19,14 @@ $transition: 400ms;
     color: white;
     background: $mix-color;
     border-radius: 50px;
+    cursor: pointer;
     width: 100%;
     border: none;
-    padding:15px 25px;
+    padding: 15px 25px;
     font-size: 17px; 
     font-weight: 400;
     box-shadow: 0px 0px 13px 1px $color-secondary;
-    
+    margin: 40px 0;
 }
 
 @mixin btn-hover{
@@ -63,7 +63,7 @@ $transition: 400ms;
     
 }
 
-/* animation sur l'apparition du menu  */
+/* animation on the appearance of the menu  */
 @keyframes progressive {
 
     0%{
@@ -80,18 +80,6 @@ $transition: 400ms;
     font-weight: 500;
     
 }
-@keyframes anim-loader-text-after {
-
-    0%{
- opacity: 0;
- 
-      
-     }
-     100%{
-         opacity: 1;
-  
- }   
- }
  
  @keyframes btn-active{
     
@@ -106,6 +94,7 @@ $transition: 400ms;
 
 }
 
+/* loading spinner anim */
 @keyframes anim-loader {
 
     0%{
@@ -118,11 +107,10 @@ $transition: 400ms;
     }   
 }
 
-
 @keyframes anim-loader-duration-after {
 
     99%{
-        opacity: 1;
+        opacity: 0.9;
         height: 100%;
         width: 100%;
     

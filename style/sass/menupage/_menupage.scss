@@ -46,6 +46,7 @@
      h3{
          font-weight: 200;
          margin: 10px 0;
+         cursor: pointer;
      }
  }
  
@@ -54,8 +55,9 @@
      @include shadow-element;
      overflow: hidden;
      background-color: white;
+     cursor: pointer;
      margin: 20px 0;
-     height: 20%;
+     height: 22%;
      border-radius: 20px;
 
     /* animation sur l'apparition progressive du menu  */
@@ -64,10 +66,10 @@
         animation: progressive  1.3s ;
      }
      &-two{
-        animation: progressive  1.6s ;
+        animation: progressive  1.9s ;
      }
      &-three{
-        animation: progressive  1.9s ;
+        animation: progressive  2.5s ;
      }
      
     &-choice{

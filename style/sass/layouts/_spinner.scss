@@ -7,11 +7,11 @@
     justify-content: center;
     background:white;
     z-index: 1;
+    
     animation: anim-loader-duration-after 4s forwards ;
 
     &-spinner{
-        display: flex;
-        align-items: center;
+        @include flexbox-centre;
         justify-content: space-around;
         border-image-slice: 1;
         height: 80px;
@@ -23,7 +23,6 @@
             height: 30px;
             width: 30px;
         }
-    
     }
     &-text {
         span{
@@ -31,26 +30,26 @@
         }
     }
 }
+
 .spinner-one{
     background-color: $color-secondary;
     animation: anim-loader 900ms;
-    animation-delay: 0.2s;
+    animation-delay: 0.5s;
     margin: 10px;
-  
 }
 
 .spinner-two{
     background-color: $color-tertiary;
     animation: anim-loader 900ms;
-    animation-delay: 1.2s;
+    animation-delay: 1.5s;
     margin: 10px;
 }
+
 .spinner-three{
     background-color: $color-primary;
     animation: anim-loader 900ms;
-    animation-delay: 2.2s  ;
-    margin: 10px;
-       
+    animation-delay: 2.5s  ;
+    margin: 10px;   
 }
 
 .loading-text{
@@ -60,16 +59,12 @@
 
     &-one{
         color: $color-secondary;
-        animation: anim-loader-text-after 6s;
     }
     &-two{
         color: $color-tertiary;
-        animation: anim-loader-text-after 6s;
     }
-  
     &-three{
         color: $color-primary;
-        animation: anim-loader-text-after 6s;
     }
   
 }

@@ -1,9 +1,8 @@
 header{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
+    @include flexbox-centre;
     @include shadow-element;
+    width: 100%;
+    position: relative;
 }
 
 .logo{

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap");
-/* animation sur l'apparition du menu  */
+/* animation on the appearance of the menu  */
 @-webkit-keyframes progressive {
   0% {
     -webkit-transform: translateY(50%);
@@ -26,24 +26,6 @@
   }
 }
 
-@-webkit-keyframes anim-loader-text-after {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes anim-loader-text-after {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes btn-active {
   0% {
     opacity: 0;
@@ -62,6 +44,7 @@
   }
 }
 
+/* loading spinner anim */
 @-webkit-keyframes anim-loader {
   0% {
     -webkit-transform: translateY(-1000%);
@@ -72,7 +55,6 @@
             transform: translateY(0);
   }
 }
-
 @keyframes anim-loader {
   0% {
     -webkit-transform: translateY(-1000%);
@@ -86,7 +68,7 @@
 
 @-webkit-keyframes anim-loader-duration-after {
   99% {
-    opacity: 1;
+    opacity: 0.9;
     height: 100%;
     width: 100%;
   }
@@ -99,7 +81,7 @@
 
 @keyframes anim-loader-duration-after {
   99% {
-    opacity: 1;
+    opacity: 0.9;
     height: 100%;
     width: 100%;
   }
@@ -111,16 +93,16 @@
 }
 
 header {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   -webkit-box-shadow: 0 0 6px #87878773;
           box-shadow: 0 0 6px #87878773;
+  width: 100%;
+  position: relative;
 }
 
 .logo {
@@ -411,6 +393,7 @@ a:hover {
 .bloc-menu h3 {
   font-weight: 200;
   margin: 10px 0;
+  cursor: pointer;
 }
 
 .meal {
@@ -424,8 +407,9 @@ a:hover {
           box-shadow: 0 0 6px #87878773;
   overflow: hidden;
   background-color: white;
+  cursor: pointer;
   margin: 20px 0;
-  height: 20%;
+  height: 22%;
   border-radius: 20px;
   /* animation sur l'apparition progressive du menu  */
 }
@@ -436,13 +420,13 @@ a:hover {
 }
 
 .meal-two {
-  -webkit-animation: progressive  1.6s;
-          animation: progressive  1.6s;
+  -webkit-animation: progressive  1.9s;
+          animation: progressive  1.9s;
 }
 
 .meal-three {
-  -webkit-animation: progressive  1.9s;
-          animation: progressive  1.9s;
+  -webkit-animation: progressive  2.5s;
+          animation: progressive  2.5s;
 }
 
 .meal-choice {
@@ -504,6 +488,7 @@ a:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
+  cursor: pointer;
   width: 100%;
   border: none;
   padding: 15px 25px;
@@ -511,6 +496,7 @@ a:hover {
   font-weight: 400;
   -webkit-box-shadow: 0px 0px 13px 1px #FF79DA;
           box-shadow: 0px 0px 13px 1px #FF79DA;
+  margin: 40px 0;
 }
 
 .btn-order {
@@ -591,8 +577,8 @@ a:hover {
   background-color: #FF79DA;
   -webkit-animation: anim-loader 900ms;
           animation: anim-loader 900ms;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
   margin: 10px;
 }
 
@@ -600,8 +586,8 @@ a:hover {
   background-color: #99E2D0;
   -webkit-animation: anim-loader 900ms;
           animation: anim-loader 900ms;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   margin: 10px;
 }
 
@@ -609,8 +595,8 @@ a:hover {
   background-color: #9356DC;
   -webkit-animation: anim-loader 900ms;
           animation: anim-loader 900ms;
-  -webkit-animation-delay: 2.2s;
-          animation-delay: 2.2s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   margin: 10px;
 }
 
@@ -621,20 +607,14 @@ a:hover {
 
 .loading-text-one {
   color: #FF79DA;
-  -webkit-animation: anim-loader-text-after 6s;
-          animation: anim-loader-text-after 6s;
 }
 
 .loading-text-two {
   color: #99E2D0;
-  -webkit-animation: anim-loader-text-after 6s;
-          animation: anim-loader-text-after 6s;
 }
 
 .loading-text-three {
   color: #9356DC;
-  -webkit-animation: anim-loader-text-after 6s;
-          animation: anim-loader-text-after 6s;
 }
 
 * {
@@ -744,6 +724,7 @@ h4 {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
+  cursor: pointer;
   width: 100%;
   border: none;
   padding: 15px 25px;
@@ -751,6 +732,7 @@ h4 {
   font-weight: 400;
   -webkit-box-shadow: 0px 0px 13px 1px #FF79DA;
           box-shadow: 0px 0px 13px 1px #FF79DA;
+  margin: 40px 0;
   margin-bottom: 60px;
 }
 
@@ -765,7 +747,7 @@ h4 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 30px;
+  margin: 40px;
 }
 
 .steps-choice {

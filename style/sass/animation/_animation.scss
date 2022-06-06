@@ -19,8 +19,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transform: scale(1.3);
-        transition: $transition;
-    
+        transition: $transition;   
     }
 }
 
@@ -69,7 +68,6 @@ transition: $transition;
 
 }
 
-
 @media screen and (max-width:992px){
    .heart-icon:hover{
 
@@ -90,7 +88,6 @@ transition: $transition;
             color: transparent;
         }
         .fa-solid {
-  
             background: $mix-color;
             background-clip: text;
             -webkit-background-clip: text;

@@ -4,55 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".\style\style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <script src="https://kit.fontawesome.com/5f18b148c3.js" crossorigin="anonymous"></script>
-    <title>ohmyfood - La note enchantée</title>
+    <title>ohmyfood - A La française</title>
 </head>
 <body>
 
     <!-- logo ohmyfood -->
     <header>
+        <a  href="./index.html " class="btn-return" title="Retour à la page d'accueil" >
+
+            <i class="fa-solid fa-arrow-left"></i>   </a>
         <div class="logo">
             <img class="logo-header" src="images/logo/ohmyfood.png" alt="logo ohmyfood ">
         </div>
 
     </header>
 
-
-
-
-
     <main>
-        <img class="image-menu" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+        <img class="image-menu" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt=" la photo du restaurant la note enchantée ">
     
         <section class="main-menu">
 
-            <div class="main-menu_tittle">
+            <div class="main-menu_name">
 
                 <!-- Name of the Menu -->
                 <div>
-                    <h1 class=""> A la française</h1>
+                    <h1> La note enchantée</h1>
                 </div>
-                <div>
-                    <i class="fa-regular fa-heart"></i>
+                <div class="heart-icon" >
+                    <i class="fa-regular fa-heart "></i>
+                    <i class="fa-solid fa-heart"></i>
                 </div>
             </div>
 
-            <section class="main-menu_element">
+            <section class="main-menu_meal">
 
                 <!-- entrance --> 
                 <div class="entrance bloc-menu">
     
                     <div class="tittle-bloc">
-                        <h2>ENTREE</h2>
+                        <h3>ENTREES</h3>
                     </div>
-    
-                    <div class="element">
-                        <div class="element-choice">
-                            <h3>Tartare de poulpe acidulé</h3>
-                            <div class="element-choice_left">
-                                <p class="info-dishe">Aux zests d'orange</p>
+                  
+                    <div class="meal  meal-one  ">
+                        <div class="meal-choice">
+                            <h4>Ravioles de foie gras </h4>
+                            <div class="meal-choice_left">
+                                <p class="info-dishe">Accompagnés de leur crème à la truffe</p>
                                 <p class="price"> <strong>25€ </strong></p>
                             </div>
                         </div>
@@ -60,11 +60,11 @@
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
                     </div>
-                    <div class="element">
-                        <div class="element-choice">
-                            <h3>Velouté de légumes d'antan</h3>
-                            <div class="element-choice_left">
-                                <p class="info-dishe">Carotte, panais, topinambour</p>
+                    <div class="meal  meal-two  " >
+                        <div class="meal-choice">
+                            <h4>Caviar osciètre </h4>
+                            <div class="meal-choice_left">
+                                <p class="info-dishe">Sur blini à la farine de blé noir</p>
                                 <p class="price"> <strong>35€ </strong></p>
                             </div>
                         </div>
@@ -72,11 +72,11 @@
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
                     </div>
-                    <div class="element">
-                        <div class="element-choice">
-                            <h3>Soupe à l'oignon</h3>
-                            <div class="element-choice_left">
-                                <p class="info-dishe">Revisitée</p>
+                    <div class="meal  meal-three   ">
+                        <div class="meal-choice">
+                            <h4>Homard et espuma de potiron</h4>
+                            <div class="meal-choice_left">
+                                <p class="info-dishe">Mariné aux zestes d'orange</p>
                                 <p class="price"> <strong>20€ </strong></p>
                             </div>
                         </div>
@@ -84,19 +84,32 @@
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
                     </div>
+                    <div class="meal  meal-three   ">
+                        <div class="meal-choice">
+                            <h4>Foie gras de canard cuit entier</h4>
+                            <div class="meal-choice_left">
+                                <p class="info-dishe">Confiture de figue et pain toasté</p>
+                                <p class="price"> <strong>35€ </strong></p>
+                            </div>
+                        </div>
+                        <div class="icon-validation">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+    
                 </div>
 
                 <!-- dishes-->
                 <div class="dishes bloc-menu">
-                    <div class="dishes-tittle">
-                        <h2>PLATS</h2>
+                    <div class="tittle-bloc">
+                        <h3>PLATS</h3>
                     </div>
     
-                    <div class="element">
-                        <div class="element-choice">
-                            <h3>Coquilles Saint-Jacques</h3>
-                            <div class="element-choice_left">
-                                <p class="info-dishe">Accompagnées d'une purée de panais</p>
+                    <div class="meal meal-one">
+                        <div class="meal-choice">
+                            <h4>Noix de coquilles Saint-Jacques</h4> 
+                            <div class="meal-choice_left">
+                                <p class="info-dishe">Sur lit de purée de céleri-rave</p>
                                 <p class="price"> <strong>40€ </strong></p>
                             </div>
                         </div>
@@ -104,11 +117,11 @@
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
                     </div>
-                    <div class="element">
-                        <div class="element-choice">
-                            <h3>Magret de canard</h3>
-                            <div class="element-choice_left">
-                                <p class="info-dishe">Et parmentier de pommes de terre</p>
+                    <div class="meal meal-two">
+                        <div class="meal-choice">
+                            <h4>Langoustine poêlée</h4>
+                            <div class="meal-choice_left">
+                                <p class="info-dishe">Purée de patate douce</p>
                                 <p class="price"> <strong>35€</strong></p>
                             </div>
                         </div>
@@ -117,11 +130,11 @@
                         </div>
                     </div>
 
-                    <div class="element">
-                        <div class="element-choice">
-                            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                            <div class="element-choice_left">
-                                <p class="info-dishe">Sur son lit de gnocchis aux légumes</p>
+                    <div class="meal meal-three">
+                        <div class="meal-choice">
+                            <h4>Mijoté de queue de boeuf </h4>
+                            <div class="meal-choice_left">
+                                <p class="info-dishe">Et riz sauvage aux zestes de citron</p>
                                 <p class="price"> <strong>44€</strong></p>
                             </div>
                         </div>
@@ -133,15 +146,15 @@
 
                 </div>
                 <div class="dishes bloc-menu">
-                    <div class="dishes-tittle">
-                        <h2>DESSERTS</h2>
+                    <div class="tittle-bloc">
+                        <h3>DESSERTS</h3>
                     </div>
     
-                   <div class="element">
-                        <div class="element-choice">
-                            <h3>Pétales de violettes glacés</h3>
-                            <div class="element-choice_left">
-                                <p class="info-dishe">Et purée de noisettes</p>
+                   <div class="meal meal-one">
+                        <div class="meal-choice">
+                            <h4>Macaron noisette et chocolat</h4>
+                            <div class="meal-choice_left">
+                                <p class="info-dishe">Glace au caramel brun et sel de Guérande</p>
                                 <p class="price"> <strong>18€</strong></p>
                             </div>
                         </div>
@@ -149,11 +162,11 @@
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
                     </div>
-                    <div class="element">
-                        <div class="element-choice">
-                            <h3>Fondant au chocolat</h3>
-                            <div class="element-choice_left">
-                                <p class="info-dishe">Revisitée</p>
+                    <div class="meal meal-two">
+                        <div class="meal-choice">
+                            <h4>Baba au rhum revisité </h4>
+                            <div class="meal-choice_left">
+                                <p class="info-dishe">Avec son coulis de citronRevisitée</p>
                                 <p class="price"> <strong>22€ </strong></p>
                             </div>
                         </div>
@@ -161,11 +174,11 @@
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
                     </div>
-                    <div class="element">
-                        <div class="element-choice">
-                            <h3>Millefeuille croustillant</h3>
-                            <div class="element-choice_left">
-                                <p class="info-dishe">Myrtilles et pâte d’amande</p>
+                    <div class="meal meal-three">
+                        <div class="meal-choice">
+                            <h4>Tarte au citron meringuée </h4>
+                            <div class="meal-choice_left">
+                                <p class="info-dishe">Déstructurée</p>
                                 <p class="price"> <strong>23€ </strong></p>
                             </div>
                         </div>
@@ -174,33 +187,22 @@
                         </div>
                     </div>
 
-
-                </div>
-              
-
+                </div>         
                
             </section>
-            <div>
+            <div class="btn-order">
                 <button class="btn">Commander</button>
             </div>
-
-           
 
         </section>
         
     </main>
 
-    
+    <!-- footer page ohmyfood   -->
 
-
-
-
-
-
-    <!-- bas de page ohmyfood  -->
     <footer class="ohmyfood-footer footer-page">
         <div class="ohmyfood-footer_tittle">
-            <h1 >ohmyfood</h1>
+            <h2 >ohmyfood</h2>
         </div>
         <div class="ohmyfood-footer_list">
             <ul >
