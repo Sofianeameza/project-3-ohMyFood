@@ -9,7 +9,7 @@
 
 *{
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto,sans-serif;
 }
 
 body{
@@ -92,20 +92,29 @@ h4{
 
 .steps{
     h1{
-        text-align: center;
+        margin: 50px 20px;
+
  
     }
    
     &-three{
-        display: flex;
-        justify-content: space-around;
-        margin: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+  
+
+  
     }
     
     &-choice{
       @include flexbox-centre;
       @include choice-background;
       @include shadow-element;   
+      margin: 10px 20px;
+      width: 100%;
+
+
       
        &_number {
            
@@ -130,7 +139,7 @@ h4{
         color: black ;
         font-size: 18px;
         font-weight: 600;
-        padding: 10px 30px 10px 0;
+        padding: 10px 18px 10px 0;
     }
     }
 }
@@ -141,28 +150,29 @@ h4{
     background-color: $color-gray;
 
     h2{
-        text-align: center;
         font-size: 30px;
-        padding: 40px 30px 10px 30px 
+        padding: 40px 0 0 20px; 
 
     }
 
     &-different{
-        @include flexbox-centre;
-        justify-content: space-around;
-        width: 100%;
-        padding-bottom: 100px;
-    
+
+            display: flex;
+            align-items: center;
+            padding-bottom: 100px;
+            flex-direction: column;
     }
 
     &-choice{
-       width: 22%;
+       width: 90%;
        height: 260px;
        border-radius: 15px;
        background-color:white;
        box-shadow: 0 0 16px darken($color-gray, $amount: 50%);
        min-width: 235px;
        position: relative;
+       margin: 15px 0;
+
    
        img{
           width: 100%;
@@ -210,9 +220,68 @@ h4{
     text-align: center;
 
 }
+@media screen and (min-width:768px){
+    .steps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   
+        h1{
+            text-align: center;
+        }
+        &-three{
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            width: 90%;
 
-/* responsive design similar tablet and mobile */
-@media screen and (max-width:992px) {
+
+        }
+        &-choice{
+            min-width: 28%;
+                
+        }
+    }
+
+}
+
+@media screen and (min-width:1024px){
+    .steps{
+        &-three{
+            width: 100%;
+        }
+ 
+        &-choice{
+            max-width: 29%;
+            h2{
+                padding: 10px 12px ;
+            }
+
+                
+        }
+    }
+    .restaurants{
+        h2{
+            text-align: center;
+            padding-left: 0;
+        }
+        &-different{
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+        &-choice{
+            width: 22%;
+        
+        }
+       
+      
+    }
+
+}
+
+
+/* @media screen and (max-width:992px) {
     .steps{
 
         h1{
@@ -247,3 +316,4 @@ h4{
   
 }
 
+ */

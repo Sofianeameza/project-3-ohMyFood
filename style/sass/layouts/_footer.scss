@@ -4,13 +4,13 @@
     background-color: rgba(0, 0, 0, 0.827);
 
     &_tittle{
-        display: flex;
-        justify-content: center;
-        padding: 10px 0 0 40px;
+
+
         color: white;
 
         h2{
             font-size: 20px;
+           padding: 10px 30px;
             @include font-text-shrikhand ;
 
         }
@@ -24,6 +24,12 @@
         text-decoration: none;
         color: white;
    
+    }
+    ul{
+        padding-left: 30px;
+    }
+    li{
+        margin-bottom: 10px
     }
 }
 
@@ -43,12 +49,10 @@
 ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     padding-bottom: 5px;
     
-    li{
-        margin: 20px 0;
-    }
+    
 }
 
 .footer-page{
@@ -56,8 +60,38 @@ ul{
     bottom: 40px;
 }
 
-/* responsive design similar tablet and mobile */
-@media screen and (max-width:992px) {
+
+@media screen and (min-width:768px){
+    .ohmyfood-footer_tittle{
+        text-align: center;
+    }
+    .ohmyfood-footer_list{
+        ul{
+            align-items: center;
+            padding: 0;
+
+        }
+       
+    }
+
+}
+
+@media screen and (min-width:1024px){
+    .ohmyfood-footer_list{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-bottom: 20px;
+
+
+        }
+       
+    }
+
+    
+}
+/* @media screen and (max-width:992px) {
     
     .ohmyfood-footer_tittle{
         justify-content: flex-start;
@@ -75,3 +109,4 @@ ul{
 
 
 
+ */

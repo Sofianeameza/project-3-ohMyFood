@@ -7,7 +7,7 @@
 }
 
 /* animated heart likes */
-.heart-icon:hover{
+.heart-icon:active{
 
     .fa-regular{
         color: transparent;
@@ -68,21 +68,11 @@ transition: $transition;
 
 }
 
-@media screen and (max-width:992px){
-   .heart-icon:hover{
+@media screen and (min-width:768px){
+  
 
-        .fa-regular{
-            color: inherit;
-        }
-        
-        .fa-solid{
-        background: none;
-        
-        }
-    }
-
-    .heart-icon:active {
-        animation: btn-active 2s  ;
+    .heart-icon:hover {
+        animation: btn-active 1s  ;
 
         .fa-regular{
             color: transparent;
@@ -93,8 +83,7 @@ transition: $transition;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }     
-    }    
+    }  
+
 }
-
-
 

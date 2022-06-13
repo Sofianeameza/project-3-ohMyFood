@@ -18,7 +18,7 @@
          }
      }
      &_meal{
-        display: flex;
+    @include flexbox-centre-column ;
   
          justify-content: space-around;
          width: 100%;
@@ -41,7 +41,7 @@
  }
  .bloc-menu{
  
-     width: 30%;
+     width: 94%;
      height: 400px;
 
      h3{
@@ -132,9 +132,25 @@
      margin: 30px auto;
  }
 
-  /* responsive design similar tablet and mobile */
+ @media screen and (min-width:768px){
+    .main-menu_meal{
+        flex-direction: row;
+        
+        .bloc-menu{
+            width: 30%;
+        }
+        
+    }
+    #meal-one_four {
+        height: 400px;
+    }
 
- @media screen and (max-width:992px){
+
+
+
+ }
+
+ /* @media screen and (max-width:992px){
 
     .bloc-menu{
 
@@ -161,3 +177,4 @@
 
 
  
+ */
