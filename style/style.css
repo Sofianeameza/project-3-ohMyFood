@@ -225,25 +225,6 @@ ul {
   }
 }
 
-/* @media screen and (max-width:992px) {
-    
-    .ohmyfood-footer_tittle{
-        justify-content: flex-start;
-    
-    }
-    ul{
-        flex-direction: column;
-        li{
-            margin: 5px 0;
-        }   
-     }
-     
-    }  
-
-
-
-
- */
 /* animation liens  */
 a:hover {
   -webkit-transition: 400ms;
@@ -552,34 +533,6 @@ a:hover {
   }
 }
 
-/* @media screen and (max-width:992px){
-
-    .bloc-menu{
-
-
-        width: 95%;
-    }
-
-    .main-menu{
-
-        &_name{
-            padding: 20px;
-            justify-content: space-between;
-            width: 95%;       
-        }
-
-        &_meal{
-            align-items: center;
-            flex-direction: column;
-
-        }
-    }  
-}
-
-
-
- 
- */
 /* loading spinner */
 .loading {
   display: -webkit-box;
@@ -1003,41 +956,4 @@ h4 {
     width: 22%;
   }
 }
-
-/* @media screen and (max-width:992px) {
-    .steps{
-
-        h1{
-            text-align:left;
-            padding: 40px 0 10px 30px 
-        }
-
-        &-three{
-            flex-direction: column;
-            margin: 20px;      
-        }
-
-        &-choice{
-            margin: 10px 0px 10px 20px;
-    
-        } 
-    }
-
-    .restaurants{     
-        h2{
-            text-align:left;
-        }
-
-        &-different{
-            flex-direction: column;  
-        }
-        &-choice{
-            width: 92%;
-            margin: 20px;
-        }
-    }
-  
-}
-
- */
 /*# sourceMappingURL=style.css.map */
