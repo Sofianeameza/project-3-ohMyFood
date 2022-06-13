@@ -18,7 +18,8 @@
          }
      }
      &_meal{
-         @include flexbox-centre;
+        display: flex;
+  
          justify-content: space-around;
          width: 100%;
      }
@@ -48,6 +49,14 @@
          margin: 10px 0;
          cursor: pointer;
      }
+ }
+
+ #meal-one_four{
+    height: 500px;
+
+    .meal{
+        height: 88px;
+    }
  }
  
  .meal{
@@ -128,6 +137,8 @@
  @media screen and (max-width:992px){
 
     .bloc-menu{
+
+
         width: 95%;
     }
 
@@ -140,6 +151,7 @@
         }
 
         &_meal{
+            align-items: center;
             flex-direction: column;
 
         }
